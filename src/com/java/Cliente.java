@@ -6,13 +6,21 @@ public class Cliente extends Pessoa {
 	private String tipo;
 	
 	
+	
+	public Cliente(String nome, int cep) {
+		super(nome, cep);
+		// TODO Auto-generated constructor stub
+	}
+
 	public Cliente() {
 		
 	}
 	
 	public Cliente(String nome, int cep, int conta, String tipo){
+		super(nome, cep);
 		this.conta = conta;
 		this.tipo = tipo;
+		
 		
 	}
 
